@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/attendance_tracker.php" }
+    { "source": "/", "destination": "/attendance_tracker_front.html" }
   ]
 }

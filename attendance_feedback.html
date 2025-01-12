@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <title>
+      Feedback Form
+    </title>
+    <style>
+      fieldset{
+          background-color: #f1f1f1;
+          border: none;
+          border-radius: 2px;
+          margin-bottom: 12px;
+          overflow: hidden;
+          padding: 0 .625em;
+      }
+
+      label{
+          font-family:"tahoma";
+          cursor: pointer;
+          display: inline-block;
+          padding: 3px 6px;
+          text-align: left;
+          width: 150px;
+          vertical-align: top;
+          color:cyan;
+      }
+
+      input{
+          font-size: inherit;
+      }
+      
+      .head {
+          text-align:center;
+          color:cyan;
+      }
+          
+      body {font-family: Arial, Helvetica, sans-serif;}
+      form {border: 3px solid #f1f1f1;}
+      
+      button {
+        background-color: cyan;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+      
+      button:hover {
+        opacity: 0.8;
+      }
+      
+      .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+      }
+      
+      .container {
+        padding: 16px;
+      }
+      
+      span.psw {
+        float: right;
+        padding-top: 16px;
+      }
+    </style>
+  </head>
+  <form style=background-color:black;>
+    <h1 class="head"><b>Feedback Form:-</b></h1>
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username:" name="uname" required>
+    <label for="phone"><b>Phone Number:</b></label>
+    <input type="tel" id="phone" name="Phone Number" pattern="[0-9]{10}" required><br>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password: " name="psw" required><br><br><br><br>
+    <h3 style="color:cyan;"><b>To Which Team: </b></h3>
+    <input type="radio" id="developing" name="team" value="developing">
+    <label for="developing">Developing</label><br>
+    <input type="radio" id="marketting" name="team" value="marketting">
+    <label for="marketting">Marketting</label><br>
+    <input type="radio" id="others" name="team" value="Others">
+    <label for="others">Others</label><br><br>
+    <label for="fback"><b>Feedback</b></label>
+    <TEXTAREA type="text" placeholder="Enter Feedback:" name="fback" rows="40" cols="70" required></TEXTAREA><br><br>
+    <label><input type="checkbox" name="anonymous"> Send Anonymous</label>
+    <button type="submit">Submit</button>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</html>
